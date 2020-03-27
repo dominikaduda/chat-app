@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.web.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.input.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.ChatController">
+    <children>
+        <VBox layoutX="14.0" layoutY="8.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="500.0" prefWidth="502.0" spacing="10.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="5.0" AnchorPane.topAnchor="5.0">
+            <children>
+                <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="356.0" prefWidth="502.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <WebView fx:id="areaWebView" prefHeight="200.0" prefWidth="600.0" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="buttonDisconnect" minWidth="-Infinity" mnemonicParsing="false" onAction="#disconnectFromServer" prefHeight="25.0" prefWidth="80.0" text="Disconnect" HBox.hgrow="ALWAYS" />
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="BOTTOM_LEFT" maxHeight="-Infinity" prefHeight="200.0" prefWidth="502.0" spacing="10.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <HTMLEditor fx:id="fieldHTML" htmlText="&lt;html&gt;&lt;head&gt;&lt;/head&gt;&lt;body contenteditable=&quot;true&quot;&gt;&lt;/body&gt;&lt;/html&gt;" minHeight="200.0" prefHeight="200.0" prefWidth="402.0" HBox.hgrow="ALWAYS" />
+                        <Button fx:id="buttonSend" minWidth="-Infinity" mnemonicParsing="false" onAction="#sendMessage" prefHeight="25.0" prefWidth="80.0" text="Send" HBox.hgrow="ALWAYS" />
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+            </children>
+        </VBox>
+    </children>
+</AnchorPane>
